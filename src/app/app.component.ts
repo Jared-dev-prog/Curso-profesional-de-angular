@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { AtributoComponent } from './components/atributo/atributo.component';
 import { EstructuralComponent } from './components/estructural/estructural.component';
@@ -12,6 +12,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
   imports: [
     CommonModule,
     RouterOutlet,
+    RouterModule,
     HeaderComponent,
     AtributoComponent,
     EstructuralComponent,
