@@ -23,4 +23,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 })
 export class AppComponent {
   title = 'primer-proyecto';
+  constructor() {
+    localStorage.setItem('id', '1234');
+  }
 }
