@@ -2,12 +2,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'estados',
-  standalone: true
+  standalone: true,
 })
 export class EstadosPipe implements PipeTransform {
-
   transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+    const text = value === 0 ? 'PENDIENTE' : 'REGISTRADO';
+    return text;
   }
-
 }
